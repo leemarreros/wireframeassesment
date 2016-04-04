@@ -1,0 +1,483 @@
+/*LIST - 1st wireframe*/
+
+.wrapperList {
+    background-color: #2981E8;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    height: 420px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+
+.item-list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #50E3C2;
+    max-width: 650px;
+    height: 100px;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+.image-item-list {
+    width: 70px;
+    box-shadow: 3px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon-item-list {
+    margin: 0px 7px 0px 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-list-text {
+    margin-left: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-list-text h1 {
+    margin: 8px 0px 8px 0px;
+    font-family: Lato;
+    color: #2981E8;
+    font-size: 21px;
+}
+
+.item-list-text h1:nth-child(2) {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.bar-indicator-wrapper {
+    width: 320px;
+    margin-left: 25px;
+    margin-right: 10px;
+    background-color: grey;
+    border-radius: 20px;
+    width: 60%;
+}
+
+.bar-indicator-wrapper-medium {
+    width: 370px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: grey;
+    border-radius: 20px;
+    width: 60%;
+}
+
+.bar-indicator-wrapper-large {
+    width: 520px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: grey;
+    border-radius: 20px;
+    width: 90%;
+}
+
+.bar-indicator-content {
+    background-color: #2981E8;
+    border-radius: 20px;
+    width: 80%;
+}
+
+@media all and (max-width:1000px) {
+    
+}
+
+@media all and (max-width:750px) {
+    .wrapperList {
+        height: auto;
+    }
+    
+    .item-list {
+        flex-direction: column;
+        height: auto;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0px;
+    }
+    
+    .item-list-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width:500px) {
+    
+}
+
+/*SUMMARY*/
+
+.wrapperSummary {
+    border: #2981E8 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    left: 150px;
+    border-radius: 5px;
+}
+
+.wrapperSummary h1 {
+    font-family: Lato;
+    color: #2981E8;
+}
+
+.top-summary {
+    background-color: white;
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+}
+
+.title-head {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+}
+
+.image-item-list {
+    width: 40px;
+    height: 40px;
+}
+
+.content-head {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.content-head-row {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.content-head-row h1 {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+/*bottom*/
+.bottom-summary {
+    background-color: #2981E8;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.summary-row {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.row-icon {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.circle {
+    background-color: grey;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.row-description h1 {
+    margin: 5px 0px;
+    font-size: 16px;
+}
+
+.row-description h1:nth-child(1) {
+    font-weight: bold;
+}
+
+.row-description h1:nth-child(2) {
+    font-weight: 500;
+}
+
+.row-description h1:nth-child(3) {
+    font-weight: 300;
+}
+
+@media all and (max-width:1000px) {
+    .wrapperSummary { 
+        left: 45px;
+    }
+}
+
+@media all and (max-width:750px) {
+    .wrapperSummary { 
+        left: 0px;
+    }
+    
+    .content-head-row h1{
+        font-size: 18px;
+    }
+    
+    .summary-row {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0px;
+    }
+    
+    .circle {
+       margin: 0px; 
+    }
+    
+    .row-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .row-description h1 {
+        margin: 10px 0px;
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width:500px) {
+}
+
+/*MONTH*/
+
+.wrapperMonth {
+    border: #2981E8 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    left: 250px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.wrapperMonth h1 {
+    font-family: Lato;
+    color: white;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2981E8;
+    width: 100%;
+}
+
+.button-nav-bar {
+    background-color: #50E3C2;
+    flex: 1;
+    border-radius: 5px;
+    margin: 10px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    box-shadow: 3px 4px 8px 0 rgba(0, 0, 0, 0.2);;
+}
+
+.button-nav-bar h1 {
+    margin: 0px;
+    font-weight: 400;
+}
+
+.search-bar-wrapper {
+    flex: 3;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex: 1;
+    height: 30px;
+}
+
+.leave-month-page {
+    flex: 1;   
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.content-month {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 10px;
+}
+
+.row-data-month {
+    background-color: #2981E8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 5px 10px;
+    border-radius: 15px;
+    height: 85px;
+}
+
+.icon-item-month {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-month {
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.expenditure {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.expenditure h1 {
+    margin: 0px;
+    text-align: left;
+    margin: 4px 0px;
+}
+
+.expenditure h1:nth-child(1) { 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.expenditure h1:nth-child(2) { 
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.values {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.values h1 {
+    font-weight: 300;
+    font-style: italic;
+}
+
+@media all and (max-width:1000px) {
+    .wrapperMonth {
+        left: 100px;
+    }
+}
+
+@media all and (max-width:850px) {
+    .wrapperMonth {
+        left: 50px;
+    }
+}
+
+@media all and (max-width:750px) {
+    .wrapperMonth {
+        left: 0px;
+    }
+    
+    .nav-bar {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        padding-bottom: 5px;
+    }
+    
+    .search-bar {
+        border-radius: 2px;
+        height: 40px;    
+    }
+    
+    .nav-bar div {
+        margin: 0.5px 0px;
+    }
+    
+    .button-nav-bar, .search-bar-wrapper {
+        width: 100%;
+    }
+    
+    .row-data-month {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+    
+    .expenditure {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .values {
+        width: 100%;
+
+    }
+    
+}
+
+@media all and (max-width:500px) {
+}
+
